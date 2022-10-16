@@ -1,8 +1,14 @@
-
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
+}
+
+:root{
+  --color-dark: #937DC2;
+  --color-md: #C689C6;
+  --color-light: #FFABE1;
+  --color-verylight: #FFE6F7;
 }
 
 .App-header {

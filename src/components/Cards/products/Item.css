@@ -1,6 +1,6 @@
 .item{
-    height: 400px;
-    width: 21%;
+    height: 300px;
+    width: 30%;
     margin-top: 40px;
     position: relative;
     background-color: var(--color-medio);
@@ -9,13 +9,16 @@
     padding: 30px;
     box-sizing: border-box;
     display: flex;
+    justify-content: flex-end;
     flex-direction: column;
     align-items: center;
 }
 
 .item img {
     width: 100%;
-    height: 50%;
+    height: 60%;
+    position: absolute;
+    top: -50px;
     object-fit: contain;
 }
 
@@ -36,7 +39,7 @@
 .item a {
     background-color: var(--color-clarito);
     width: 50%;
-    height: 100px;
+    height: 70px;
     border-radius: 20px;
     display: flex;
     align-items: center;
@@ -52,7 +55,8 @@
     background-color: var(--color-oscuro);
     color: inherit;
 }
-@media (max-width: 8000px) {
+
+@media (max-width: 600px) {
     .item{
         height: 300px;
         width: 21%;

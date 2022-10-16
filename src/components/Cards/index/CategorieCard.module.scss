@@ -1,0 +1,38 @@
+.categories_card{
+    background-color: var(--color-light);
+    border-radius: 100px;
+    display: flex;
+    height: 250px;
+    width: 30%;
+
+    img{
+        height: 100%;
+        width: 50%;
+        position: relative;
+    }
+    
+    &[direction="rtl"]{
+        flex-direction: row-reverse;
+    }
+
+    .text{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        h3{
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+
+        a{
+            padding: 10px 20px;
+            background-color: var(--color-dark);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+        }
+    }
+}

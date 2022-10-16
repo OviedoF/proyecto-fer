@@ -1,0 +1,61 @@
+//  .bi-cart3{
+// position: relative;
+// right: 10%;
+// }
+// .navbar-brand{
+//     text-decoration: none;
+//     color: var(--color-md);
+// }
+// .nav-item .nav-link {
+//     width: 100%;
+//     position: relative;
+//     font-style: none;
+//     color: rgb(0, 0, 0);
+// }
+// .nav-link li{
+//     color: red;
+// }
+// .nav-item {
+//     margin-left: 30px;
+//     font-family: 'Times New Roman', Times, serif;
+//     font-stretch: extra-condensed;
+//     text-decoration: none;
+// }
+// .container-fluid {
+//     background-color: rgb(247, 255, 252);
+//     font-family: 'Times New Roman', Times, serif;
+//     color: black;
+//     padding: 3px;
+// }
+// .navbar .bg-light{
+//     background-color: blue;
+// } 
+
+.navbar{
+    .container-fluid{
+        #navbarNav{
+            ul{
+                li{
+                    transition: all .5s;
+                    position: relative;
+
+                    &::after{
+                        content: "";
+                        position: absolute;
+                        left: 50%;
+                        width: 0px;
+                        bottom: 0;
+                        transition: all .5s;
+                        height: 2px;
+                        background-color: var(--color-dark);
+                    }
+
+                    &:hover::after{
+                        left: 0;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,27 @@
+.detalles{
+    display: flex;
+    align-items: center;
+    padding: 0 100px;
+
+    .text{
+        p{
+            margin-top: 20px;
+        }
+
+        .buy{
+            display: flex;
+            
+            button{
+                margin-left: 30px;
+                height: 50px;
+                border: 1px solid black;
+                transition: all .5s;
+
+                &:hover{
+                    background-color: black;
+                    color: white;
+                }
+            }
+        }
+    }
+}

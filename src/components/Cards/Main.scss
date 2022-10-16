@@ -1,18 +1,15 @@
-.main {
-    background-color: blueviolet;
-
-}
 .form {
     background-color: rgb(150, 142, 163);
     margin-top: 40px;
     padding: 40px 30px;
-height: 40%;
+    height: 40%;
     display: flex;
     width: 80%;
     justify-content: center;
     position: relative;
     left: 100px;
 }
+
 .carusel{
    width: 100%;
    height: 10%;
@@ -51,4 +48,30 @@ figure img {
     width: 100%;
     height: 20%;
     display: flex;
+}
+
+.carusel{
+    padding: 0 0px;
+
+    .container{
+        width: 100%;
+        background-color: transparent;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 10px;
+
+        .card{
+
+            &:first-child{
+                grid-column: 1 /span 2;
+                grid-row: 1 / span 2;
+            }
+
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
 }
